@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+}
+
+.order-card {
+    width: 350px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+
+    &__box {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 900;
+    }
+
+    &__description {
+        margin: 1.5rem 0 2rem 0;
+        color: hsl(224, 23%, 55%);
+        font-size: 1.4rem;
+    }
+
+    &__plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        background-color: hsl(228, 31%, 96%);
+        border-radius: 8px;
+
+        img {
+            width: 40%;
+        }
+    }
+    &__plan-info {
+        margin-left: 1.5rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    &__plan-title {
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    &__plan-cost {
+        color: hsl(224, 23%, 55%);
+    }
+
+    &__plan-box {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__link {
+        color: hsl(245, 75%, 52%);
+        font-weight: 700;
+        transition: color .4s, text-decoration .4s;
+        &:hover {
+            color: hsl(245, 73%, 64%);
+            text-decoration: none;
+        }
+    }
+
+    &__btn {
+        margin: 2.4rem 0;
+        padding: 1.2rem 0;
+        font-family: inherit;
+        color: hsl(225, 100%, 94%);
+        border: none;
+        background-color: hsl(245, 75%, 52%);
+        font-weight: 700;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color .4s;
+        &:hover {
+            background-color: hsl(245, 73%, 64%);
+        }
+    }
+
+    &__cancel {
+        color: hsl(224, 23%, 55%);
+        font-weight: 600;
+        text-decoration: none;
+        transition: color .4s;
+        &:hover {
+            color: hsl(223, 47%, 23%);
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 2rem;
+}

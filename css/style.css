@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+}
+
+.order-card {
+  width: 350px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+.order-card__box {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.order-card__img img {
+  width: 100%;
+}
+.order-card__title {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.order-card__description {
+  margin: 1.5rem 0 2rem 0;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+}
+.order-card__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: hsl(228, 31%, 96%);
+  border-radius: 8px;
+}
+.order-card__plan img {
+  width: 40%;
+}
+.order-card__plan-info {
+  margin-left: 1.5rem;
+  width: 100%;
+  text-align: left;
+}
+.order-card__plan-title {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.order-card__plan-cost {
+  color: hsl(224, 23%, 55%);
+}
+.order-card__plan-box {
+  display: flex;
+  align-items: center;
+}
+.order-card__link {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  transition: color 0.4s, -webkit-text-decoration 0.4s;
+  transition: color 0.4s, text-decoration 0.4s;
+  transition: color 0.4s, text-decoration 0.4s, -webkit-text-decoration 0.4s;
+}
+.order-card__link:hover {
+  color: hsl(245, 73%, 64%);
+  text-decoration: none;
+}
+.order-card__btn {
+  margin: 2.4rem 0;
+  padding: 1.2rem 0;
+  font-family: inherit;
+  color: hsl(225, 100%, 94%);
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.order-card__btn:hover {
+  background-color: hsl(245, 73%, 64%);
+}
+.order-card__cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.order-card__cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+footer {
+  position: absolute;
+  bottom: 2rem;
+}/*# sourceMappingURL=style.css.map */
